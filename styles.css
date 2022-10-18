@@ -135,6 +135,8 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#833ab4",endCo
 img{
     /* width: 100%; */
     position: fixed;
+    scale: 1.5;
+    margin-left: 20px;
     z-index: -1;
     height: 100vh;
     filter: blur(.5px);
@@ -229,3 +231,34 @@ main p {
 .btn-info:hover{
     background-color: #FCA542;
 }
+
+
+.h1-animation{
+    animation: animate 3s infinite alternate  ;
+}
+.p-animation{
+    animation:  animate2 3s infinite alternate linear;
+}
+
+@keyframes animate {
+    0% {
+        transform: translate3d(0,0,0) rotate(0deg);
+       
+    }
+    100%{
+        transform: translate3d(150px,0,0) rotate(30deg);
+        
+        
+    }
+    
+}
+
+@keyframes animate2 {
+    0% {
+        transform: translate3d(0,0,0);
+    }
+    100%{
+        transform: translate3d(0,20px,0);
+    }
+}
+
